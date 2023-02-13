@@ -1,0 +1,195 @@
+html {height: 100%;}
+
+body {
+  width: 100%;
+  height: 200%;
+  color: black;
+  background: saddlebrown;
+  font-size: 1em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 135%;
+}
+
+img {
+  height: 20%;
+  width: 15%;
+  margin: 2%;
+}
+
+h2 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  text-align: center;
+  font-size: 50px;
+}
+
+
+h4 {
+  font-family: Flotta;
+  color: black;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  line-height: 1;
+}
+
+div.sizet{
+border: 4px outset #64A46A;
+background-color: #DAF7A6;
+}
+
+
+.sizet {
+text-align: left;
+margin-left:40px;
+margin-right:40px;
+}
+
+.p {
+text-align: center;
+}
+
+.img {
+width: 100%;
+text-align: center;
+}
+
+
+main {
+  width: 100%;
+  text-align: center;
+}
+
+.varoņi {
+  width: 95%;
+  min-height: 50%;
+  margin: 2%;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 2px 6px;
+  transition-duration: 0.1s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 0px solid #F5E691;
+  margin-right: 2%;
+}
+.button1:hover {
+  background-color: #F5E691;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 0px solid #FFB4D6;
+}
+.button2:hover {
+  background-color: #FFB4D6;
+  color: white;
+}
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 0px solid #C1C1CC;
+}
+.button3:hover {
+  background-color: #C1C1CC;
+  color: white;
+}
+
+.button4 {
+  background-color: white; 
+  color: black; 
+  border: 0px solid #A9DFBF;
+}
+.button4:hover {
+  background-color: #A9DFBF;
+  color: white;
+}
+
+.button5 {
+  background-color: white; 
+  color: black; 
+  border: 0px solid #A9DFBF;
+}
+.button5:hover {
+  background-color: #A9DFBF;
+  color: white;
+}
+
+.button6 {
+  background-color: white; 
+  color: black; 
+  border: 0px solid #A9DFBF;
+}
+.button6:hover {
+  background-color: #A9DFBF;
+  color: white;
+}
+
+
+.buttons {
+  text-align: center;
+}
+
+div.gallery1 {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery1:hover {
+  border: 1px solid #777;
+}
+
+div.gallery1 img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 30px;
+  text-align: center;
+}
+
+debugger;
+
+  const zelukinText = localStorage.getItem('zelukinText');
+
+  if (zelukinText) {
+    alert(zelukinText);
+  }
+
+
+debugger;
+document.querySelector('#form button').addEventListener('click', function(e) {
+  e.preventDefault();
+  alert('works')
+  const val = document.querySelector('#form textarea').value.trim();
+
+  if (val) {
+    localStorage.setItem('zelukinText', val);
+  }
+});
+
+
+footer {
+  height: 98%;
+  background-color: #A9DFBF;
+  min-height: 50px;
+  color: darkolivegreen;
